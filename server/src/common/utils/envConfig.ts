@@ -12,7 +12,7 @@ const envSchema = z.object({
 
   PORT: z.coerce.number().int().positive().default(5000),
 
-  CORS_ORIGIN: z.string().url().default("http://localhost:5000"),
+  CORS_ORIGIN: z.string().url().default("http://localhost:5174"),
 
   COMMON_RATE_LIMIT_MAX_REQUESTS: z.coerce
     .number()
